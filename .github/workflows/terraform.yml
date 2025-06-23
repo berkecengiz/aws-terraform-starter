@@ -10,9 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v2
+
       - name: Terraform Format Check
-        run:  terraform fmt -check -recursive || (echo "Terraform code is not formatted. Run 'terraform fmt' locally." && exit 1)
+        run: terraform fmt -check -recursive || (echo "Terraform code is not formatted. Run 'terraform fmt' locally." && exit 1)
+
+      - name: Terraform Init
+        run: terraform init -input=false
+
       - name: Terraform Validate
         run: terraform validate
