@@ -7,8 +7,8 @@ resource "random_id" "suffix" {
 }
 
 resource "aws_s3_bucket" "demo_bucket" {
-  bucket = "${var.bucket_prefix}-${random_id.suffix.hex}"
-  acl    = "private"
+  bucket        = "${var.bucket_prefix}-${random_id.suffix.hex}"
+  acl           = "private"
   force_destroy = true
 
   tags = {
