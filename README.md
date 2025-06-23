@@ -2,7 +2,7 @@
 
 This is a simple Terraform starter project to provision an S3 bucket on AWS.
 
-## 🛠️ What it Does
+## 🛠️ What It Does
 
 - Creates a private S3 bucket
 - Uses a random suffix to ensure uniqueness
