@@ -63,11 +63,6 @@ Continuous integration is handled by a GitHub Actions workflow located at
 
 ---
 
-## ⚠️ Cost Management
-
-This demo only provisions an S3 bucket (minimal cost), but always check your AWS billing dashboard after testing.
-
----
 
 ## 🔄 Clean Up
 
